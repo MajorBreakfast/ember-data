@@ -6,5 +6,19 @@
   "main": "./ember-data.js",
   "dependencies": {
     "ember": "> 1.0.0"
+  },
+  "jspm": {
+    "main": "ember-data",
+    "shim": {
+      "ember-data": {
+        "deps": ["github:MajorBreakfast/ember"],
+        "exports": "Handlebars"
+      }
+    },
+    "dependencies": {
+      "github:MajorBreakfast/ember": "> 1.0.0"
+    },
+    "files": ["ember-data.js"],
+    "buildConfig": { "minify": true }
   }
 }
