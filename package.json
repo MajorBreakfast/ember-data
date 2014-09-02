@@ -12,7 +12,7 @@
     "shim": {
       "ember-data": {
         "deps": ["github:MajorBreakfast/ember"],
-        "exports": "Handlebars"
+        "exports": "DS"
       }
     },
     "dependencies": {
