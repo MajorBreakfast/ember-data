@@ -10,15 +10,14 @@
   "jspm": {
     "main": "ember-data",
     "shim": {
-      "ember-data": {
-        "deps": ["github:MajorBreakfast/ember"],
-        "exports": "DS"
-      }
+      "ember-data": { "deps": ["ember"], "exports": "DS" },
+      "ember-data.prod": { "deps": ["ember"], "exports": "DS" }
     },
+    "registry": "jspm",
     "dependencies": {
-      "github:MajorBreakfast/ember": "> 1.0.0"
+      "ember": "github:MajorBreakfast/ember@master"
     },
-    "files": ["ember-data.js"],
+    "files": ["ember-data.js", "ember-data.prod.js"],
     "buildConfig": { "minify": true }
   }
 }
